@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Virginia Patrika | Art gallery website</title>
+  </head>
+  <body class="bg-red-400">
+    <!--hidden header for accesibility reasons(screen readers)  -->
+    <header aria-labelledby="art-gallery__main-page">
+      <h1 id="art-gallery__main-page" class="hidden">
+        Modern Art Gallery main webpage
+      </h1>
+    </header>
+    <main>
+      <!-- HERO SECTION -->
+      <section class="bg-red-800">
+        <!-- mobile hero image -->
+        <img class="md:hidden" src="assets/mobile/image-hero@2x.jpg" alt="" />
+        <!-- tablet hero image -->
+        <img
+          class="hidden md:block xl:hidden md:w-[57vw] md:relative"
+          src="assets/tablet/image-hero@2x.jpg"
+          alt=""
+        />
+        <!-- div for desktop -->
+        <div class="xl:flex">
+          <div class="hidden xl:block xl:bg-blue-300 xl:w-[35.15vw]"></div>
+          <!-- desktop hero image -->
+          <img
+            class="hidden xl:block xl:w-[42vw]"
+            src="assets/desktop/image-hero@2x.jpg"
+            alt=""
+          />
+        </div>
+        <!-- title and text-button container -->
+        <h2
+          class="pl-4 pt-8 pb-8 uppercase font-(family-name:--font-big-shoulders) font-black text-6xl leading-[0.92] text-(--color-almost-black) md:pl-0 md:absolute md:top-[15vw] md:left-[50vw] md:text-[4.375rem] xl:left-[13vw] xl:top-[15vw] xl:text-8xl"
+        >
+          Modern <br />
+          Art Gallery
+        </h2>
+
+        <!-- text-button container -->
+        <div
+          class="pl-4 md:pl-0 md:absolute md:left-[50vw] md:top-[42vw] xl:left-[72vw] xl:top-[15vw]"
+        >
+          <p
+            class="pb-8 pr-4 font-(family-name:--font-outfit) font-light text-lg leading-[1.55] text-(--color-dark-grey) md:pr-8 xl:text-[1.375rem] xl:leading-[1.45] xl:pr-2"
+          >
+            The arts in the collection of the Modern Art Gallery all started
+            from a spark of inspiration. Will these pieces inspire you? Visit us
+            and find out.
+          </p>
+
+          <button class="flex">
+            <div
+              class="flex items-center justify-center w-[204px] h-[72px] bg-[var(--color-almost-black)]"
+            >
+              <p
+                class="text-white uppercase font-(family-name:--font-big-shoulders) text-xl tracking-[3.64px]"
+              >
+                Our location
+              </p>
+            </div>
+            <div
+              class="flex items-center justify-center w-[56px] h-[72px] bg-[var(--color-gold)]"
+            >
+              <img src="assets/icon-arrow-right.svg" alt="" />
+            </div>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- 
+  
+
+  Our location
+
+  Your day at the gallery
+
+  Wander through our distinct collections and find new insights about 
+  our artists. Dive into the details of their creative process.
+
+  Come &amp; be inspired
+
+  We’re excited to welcome you to our gallery and see how our collections 
+  influence you.
+
+  Modern Art Gallery
+
+  The Modern Art Gallery is free to all visitors and open seven days a week 
+  from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+   -->
+  </body>
+</html>
