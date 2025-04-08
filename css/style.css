@@ -781,6 +781,11 @@
       color: var(--text-70);
     }
   }
+  .lg\:top-\[57vw\] {
+    @media (width >= 64rem) {
+      top: 57vw;
+    }
+  }
   .xl\:top-48 {
     @media (width >= 80rem) {
       top: calc(var(--spacing) * 48);
