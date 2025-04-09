@@ -8,6 +8,12 @@
   If we ever want to remove these styles, we need to add an explicit border
   color utility to any element that depends on these defaults.
 */
+
+@theme {
+  /* custom breakpoint */
+  --breakpoint-between-md-and-lg: 62rem;
+}
+
 @layer base {
   *,
   ::after,
@@ -28,12 +34,12 @@
   /* font-family */
   --font-big-shoulders: "Big Shoulders", "Arial", "sans-serif";
   --font-outfit: "Outfit", "Arial", "sans-serif";
-
- 
+}
 
 /* 
 sm	40rem (640px)	@media (width >= 40rem) { ... }
 md	48rem (768px)	@media (width >= 48rem) { ... }
 lg	64rem (1024px)	@media (width >= 64rem) { ... }
 xl	80rem (1280px)	@media (width >= 80rem) { ... }
-2xl	96rem (1536px)	@media (width >= 96rem) { ... } */
+2xl	96rem (1536px)	@media (width >= 96rem) { ... }
+*/
