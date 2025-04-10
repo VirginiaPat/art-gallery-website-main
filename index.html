@@ -30,17 +30,18 @@
 
     <title>Virginia Patrika | Art gallery website</title>
   </head>
-  <body class="bg-red-400">
+  <body class="bg-red-200">
     <!--hidden header for accesibility reasons(screen readers)  -->
     <header aria-labelledby="art-gallery__main-page">
       <h1 id="art-gallery__main-page" class="hidden">
         Modern Art Gallery main webpage
       </h1>
     </header>
-    <main>
+    <main class="flex flex-col gap-30">
       <!-- HERO SECTION -->
-      <section class="bg-red-800 between-md-and-lg:bg-amber-300">
+      <section>
         <!-- mobile hero image -->
+
         <img class="md:hidden" src="assets/mobile/image-hero@2x.jpg" alt="" />
         <!-- tablet hero image -->
         <img
@@ -50,17 +51,20 @@
         />
         <!-- div for desktop -->
         <div class="xl:flex">
-          <div class="hidden xl:block xl:bg-blue-300 xl:w-[35.15vw]"></div>
+          <!-- black container -->
+          <div
+            class="hidden xl:block xl:bg-[var(--color-almost-black)] xl:w-[31.25vw]"
+          ></div>
           <!-- desktop hero image -->
           <img
-            class="hidden xl:block xl:w-[42vw]"
+            class="hidden xl:block xl:w-[37.5vw]"
             src="assets/desktop/image-hero@2x.jpg"
             alt=""
           />
         </div>
         <!-- title and text-button container -->
         <h2
-          class="pl-4 pt-8 pb-8 uppercase font-(family-name:--font-big-shoulders) font-black text-6xl leading-[0.92] text-(--color-almost-black) md:pl-0 md:absolute md:top-[15vw] md:left-[50vw] md:text-[4.375rem] xl:left-[13vw] xl:top-[15vw] xl:text-8xl"
+          class="pl-4 pt-8 pb-8 uppercase font-(family-name:--font-big-shoulders) font-black text-6xl leading-[0.92] text-(--color-almost-black) md:pl-0 md:absolute md:top-[15vw] md:left-[50vw] md:text-[4.375rem] xl:left-[11.4vw] xl:top-[13vw] xl:text-8xl xl:mix-blend-difference xl:text-white"
         >
           Modern <br />
           Art Gallery
@@ -68,19 +72,21 @@
 
         <!-- text-button container -->
         <div
-          class="pl-4 md:pl-0 md:absolute md:left-[50vw] md:top-[42vw] between-md-and-lg:top-[38vw] lg:top-[35vw] xl:left-[72vw] xl:top-[15vw]"
+          class="pl-4 md:pl-0 md:absolute md:left-[50vw] md:top-[42vw] between-md-and-lg:top-[38vw] lg:top-[35vw] xl:left-[64vw] xl:top-[15vw]"
         >
           <p
-            class="pb-8 pr-4 font-(family-name:--font-outfit) font-light text-lg leading-[1.55] text-(--color-dark-grey) md:pr-8 xl:text-[1.375rem] xl:leading-[1.45] xl:pr-2"
+            class="pb-8 pr-4 font-(family-name:--font-outfit) font-light text-lg text-(--color-dark-grey) md:pr-8 xl:text-[1.375rem] xl:leading-[1.45] xl:pr-40"
           >
             The arts in the collection of the Modern Art Gallery all started
             from a spark of inspiration. Will these pieces inspire you? Visit us
             and find out.
           </p>
 
-          <button class="flex">
+          <button
+            class="flex group focus:outline-2 focus:outline-offset-2 focus:outline-[var(--color-almost-black)]"
+          >
             <div
-              class="flex items-center justify-center w-[204px] h-[72px] bg-[var(--color-almost-black)]"
+              class="flex items-center justify-center w-[204px] h-[72px] bg-[var(--color-almost-black)] group-hover:bg-[var(--color-gold)] transition-colors duration-400 active:bg-yellow-700"
             >
               <p
                 class="text-white uppercase font-(family-name:--font-big-shoulders) text-xl tracking-[3.64px]"
@@ -89,30 +95,123 @@
               </p>
             </div>
             <div
-              class="flex items-center justify-center w-[56px] h-[72px] bg-[var(--color-gold)]"
+              class="flex items-center justify-center w-[56px] h-[72px] bg-[var(--color-gold)] group-hover:bg-[var(--color-almost-black)] transition-colors duration-400"
             >
               <img src="assets/icon-arrow-right.svg" alt="" />
             </div>
           </button>
         </div>
       </section>
+
+      <!-- YOUR DAY AT THE GALLERY SECTION -->
+      <section
+        class="pl-4 pr-4 flex flex-col gap-8 md:pl-9.5 md:pr-9.5 md:gap-2.5 xl:pl-0 xl:pr-0 xl:w-[77vw] xl:mr-auto xl:ml-auto"
+      >
+        <!-- 1st container:contains photo and text -->
+        <div class="flex flex-col gap-6 md:flex-row md:gap-17 xl:gap-30">
+          <img
+            class="md:hidden"
+            src="assets/mobile/image-grid-1@2x.jpg"
+            alt=""
+          />
+
+          <div
+            class="flex flex-col gap-5 md:gap-6 between-md-and-lg:gap-8 between-md-and-lg:justify-center"
+          >
+            <h2
+              class="uppercase font-(family-name:--font-big-shoulders) font-black text-[3.125rem] leading-[0.9] text-(--color-almost-black) between-md-and-lg:items-center lg:text-6xl xl:hidden"
+            >
+              Your day <br />
+              at the gallery
+            </h2>
+
+            <h2
+              class="hidden xl:block xl:uppercase xl:font-(family-name:--font-big-shoulders) xl:font-black xl:text-(--color-almost-black) xl:items-center xl:text-6xl"
+            >
+              Your day at<br />
+              the gallery
+            </h2>
+
+            <p
+              class="font-(family-name:--font-outfit) font-light text-lg text-(--color-dark-grey) lg:text-[1.375rem] lg:leading-[1.45]"
+            >
+              Wander through our distinct collections and find new insights
+              about our artists. Dive into the details of their creative
+              process.
+            </p>
+          </div>
+
+          <!-- images for tablet and larger screens -->
+          <img
+            class="hidden md:block md:w-[52vw] xl:hidden"
+            src="assets/tablet/image-grid-1@2x.jpg"
+            alt=""
+          />
+          <img
+            class="hidden xl:block xl:w-[44vw]"
+            src="assets/desktop/image-grid-1@2x.jpg"
+            alt=""
+          />
+        </div>
+
+        <!-- 2nd container:contains 1 image and container with an image and a text container -->
+        <div class="flex flex-col gap-4 md:flex-row md:gap-2.5">
+          <img
+            class="md:hidden"
+            src="assets/mobile/image-grid-2@2x.jpg"
+            alt=""
+          />
+          <img
+            class="hidden md:block md:w-[52vw] xl:hidden"
+            src="assets/tablet/image-grid-2@2x.jpg"
+            alt=""
+          />
+          <img
+            class="hidden xl:block xl:w-[44vw]"
+            src="assets/desktop/image-grid-2@2x.jpg"
+            alt=""
+          />
+
+          <!-- container with image and text container -->
+          <div class="flex flex-col gap-4 md:gap-2.5">
+            <img
+              class="md:hidden"
+              src="assets/mobile/image-grid-3@2x.jpg"
+              alt=""
+            />
+            <img
+              class="hidden md:block xl:hidden"
+              src="assets/tablet/image-grid-3@2x.jpg"
+              alt=""
+            />
+            <img
+              class="hidden xl:block"
+              src="assets/desktop/image-grid-3@2x.jpg"
+              alt=""
+            />
+
+            <!-- texts container -->
+            <div
+              class="p-6 flex flex-col gap-8 text-white bg-[var(--color-almost-black)] md:gap-6 md:pl-[1.8rem] md:pr-[1.8rem] md:justify-center md:grow lg:gap-8"
+            >
+              <h3
+                class="uppercase font-(family-name:--font-big-shoulders) font-black text-[3.125rem] leading-[0.9] lg:text-6xl"
+              >
+                Come &amp; be inspired
+              </h3>
+              <p
+                class="font-(family-name:--font-outfit) font-light text-lg lg:text-[1.375rem] lg:leading-[1.45]"
+              >
+                We’re excited to welcome you to our gallery and see how our
+                collections influence you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- 
-  
-
-  Our location
-
-  Your day at the gallery
-
-  Wander through our distinct collections and find new insights about 
-  our artists. Dive into the details of their creative process.
-
-  Come &amp; be inspired
-
-  We’re excited to welcome you to our gallery and see how our collections 
-  influence you.
-
   Modern Art Gallery
 
   The Modern Art Gallery is free to all visitors and open seven days a week 
