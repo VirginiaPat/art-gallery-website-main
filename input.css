@@ -36,6 +36,11 @@
   --font-outfit: "Outfit", "Arial", "sans-serif";
 }
 
+.ficon:hover {
+  filter: brightness(0) saturate(100%) invert(58%) sepia(65%) saturate(278%)
+    hue-rotate(341deg) brightness(98%) contrast(92%);
+}
+
 /* 
 md	48rem (768px)	@media (width >= 48rem) { ... }
 --  62rem (992px)
