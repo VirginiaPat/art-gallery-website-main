@@ -41,6 +41,16 @@
     hue-rotate(341deg) brightness(98%) contrast(92%);
 }
 
+.ficon-location {
+  filter: brightness(0) saturate(100%) invert(6%) sepia(0%) saturate(802%)
+    hue-rotate(219deg) brightness(102%) contrast(95%);
+}
+
+.ficon-location:hover {
+  filter: brightness(0) saturate(100%) invert(87%) sepia(100%) saturate(0%)
+    hue-rotate(147deg) brightness(98%) contrast(102%);
+}
+
 /* 
 md	48rem (768px)	@media (width >= 48rem) { ... }
 --  62rem (992px)

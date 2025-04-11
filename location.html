@@ -12,26 +12,141 @@
       href="./assets/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
+
     <title>Virginia Patrika | Art gallery website</title>
   </head>
   <body>
-    <!-- Back to Home
+    <!--hidden header for accesibility reasons(screen readers)  -->
+    <header aria-labelledby="art-gallery__location-page">
+      <h1 id="art-gallery__location-page" class="hidden">
+        Modern Art Gallery location page
+      </h1>
+    </header>
+    <main>
+      <!-- 1st container: map and button -->
+      <div>
+        <!-- BUTTON -->
+        <button
+          onclick="window.open('./index.html', '_blank')"
+          class="flex group focus:outline-2 focus:outline-offset-2 focus:outline-[var(--color-almost-black)] absolute top-0 left-0 z-10 md:left-10 xl:left-[10.8vw]"
+        >
+          <div
+            class="flex items-center justify-center w-[56px] h-[72px] bg-[var(--color-gold)] group-hover:bg-[var(--color-almost-black)] transition-colors duration-400"
+          >
+            <img src="assets/icon-arrow-left.svg" alt="" />
+          </div>
+          <div
+            class="flex items-center justify-center w-[204px] h-[72px] bg-[var(--color-almost-black)] group-hover:bg-[var(--color-gold)] transition-colors duration-400 active:bg-yellow-700"
+          >
+            <p
+              class="text-white uppercase font-(family-name:--font-big-shoulders) text-xl tracking-[3.64px]"
+            >
+              Our location
+            </p>
+          </div>
+        </button>
 
-  Our location
+        <img
+          class="relative md:hidden"
+          src="assets/mobile/image-map@2x.png"
+          alt=""
+        />
+        <img
+          class="hidden md:block xl:hidden"
+          src="assets/tablet/image-map@2x.png"
+          alt=""
+        />
+        <img
+          class="hidden xl:block"
+          src="assets/desktop/image-map@2x.png"
+          alt=""
+        />
+      </div>
 
-  99 King Street
-  Newport
-  RI 02840
-  United States of America
+      <!-- 2nd container: OUR LOCATION -->
+      <div class="bg-[var(--color-almost-black)] xl:flex xl:justify-center">
+        <div
+          class="pl-4 pr-4 pt-12 pb-14 flex flex-col gap-12 md:pl-9.75 md:pr-9.75 md:pt-21 md:pb-21 md:flex-row md:gap-22 xl:w-[77vw] xl:pr-0 xl:pl-0 xl:pt-30 xl:pb-30 xl:gap-80"
+        >
+          <h2
+            class="uppercase font-(family-name:--font-big-shoulders) font-black text-[3.125rem] leading-[0.9] text-white md:text-[3.4375rem] xl:text-[4.375rem] xl:leading-[1]"
+          >
+            Our location
+          </h2>
 
-  Our newly opened gallery is located near the Edward King House on 99 King 
-  Street, the Modern Art Gallery is free to all visitors and open seven days 
-  a week from 8am to 9pm.
+          <!-- adress container -->
+          <div class="flex flex-col gap-5 xl:gap-6">
+            <p
+              class="uppercase font-(family-name:--font-big-shoulders) font-black text-[2rem] leading-[1] text-[var(--color-gold)] xl:text-4xl xl:leading-[1]"
+            >
+              99 King Street
+            </p>
+            <p
+              class="font-(family-name:--font-outfit) font-light text-lg leading-[1.55] text-white xl:text-[1.375rem] xl:leading-[1.45]"
+            >
+              Newport <br />
+              RI 02840 <br />
+              United States of America
+            </p>
+            <p
+              class="font-(family-name:--font-outfit) font-light text-lg leading-[1.55] text-white xl:text-[1.375rem] xl:leading-[1.45]"
+            >
+              Our newly opened gallery is located near the Edward King House on
+              99 King Street, the Modern Art Gallery is free to all visitors and
+              open seven days a week from 8am to 9pm.
+            </p>
+          </div>
+        </div>
+      </div>
 
-  Modern Art Gallery
-
-  The Modern Art Gallery is free to all visitors and open seven days a week 
-  from 8am to 9pm. Find us at 99 King Street, Newport, USA. -->
+      <!-- 3rd container -->
+      <div class="bg-[var(--color-gold)]">
+        <div
+          class="pr-8 pl-8 pt-12 pb-12 grid gap-9.5 md:pl-9.5 md:pr-9.5 md:pt-14 md:pb-14 md:grid-flow-col md:gap-26 between-md-and-lg:gap-37 lg:gap-40 xl:pl-0 xl:pr-0 xl:w-[77vw] xl:mr-auto xl:ml-auto xl:gap-50"
+        >
+          <img class="" src="assets/logo-dark.svg" alt="" />
+          <p
+            class="font-(family-name:--font-outfit) font-light text-base leading-[1.625] text-[var(--color-almost-black)]"
+          >
+            The Modern Art Gallery is free to all visitors and open seven days a
+            week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+          </p>
+          <div
+            class="grid gap-5 grid-flow-col auto-cols-max md:justify-self-end"
+          >
+            <a href="#"
+              ><img
+                class="ficon-location"
+                src="assets/icon-facebook.svg"
+                alt=""
+            /></a>
+            <a href="#"
+              ><img
+                class="ficon-location"
+                src="assets/icon-instagram.svg"
+                alt=""
+            /></a>
+            <a href="#"
+              ><img class="ficon-location" src="assets/icon-twitter.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
