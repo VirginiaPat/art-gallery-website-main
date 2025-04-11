@@ -245,6 +245,18 @@
   .w-\[204px\] {
     width: 204px;
   }
+  .flex-grow {
+    flex-grow: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .transform {
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .resize {
+    resize: both;
+  }
   .auto-cols-max {
     grid-auto-columns: max-content;
   }
@@ -272,6 +284,9 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
+  .gap-9 {
+    gap: calc(var(--spacing) * 9);
+  }
   .gap-9\.5 {
     gap: calc(var(--spacing) * 9.5);
   }
@@ -280,6 +295,10 @@
   }
   .gap-30 {
     gap: calc(var(--spacing) * 30);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .bg-\[var\(--color-almost-black\)\] {
     background-color: var(--color-almost-black);
@@ -395,9 +414,15 @@
   .uppercase {
     text-transform: uppercase;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .filter {
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
@@ -765,6 +790,51 @@
       gap: calc(var(--spacing) * 50);
     }
   }
+  .xl\:gap-53 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 53);
+    }
+  }
+  .xl\:gap-54 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 54);
+    }
+  }
+  .xl\:gap-55 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 55);
+    }
+  }
+  .xl\:gap-56 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 56);
+    }
+  }
+  .xl\:gap-57 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 57);
+    }
+  }
+  .xl\:gap-58 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 58);
+    }
+  }
+  .xl\:gap-60 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 60);
+    }
+  }
+  .xl\:gap-65 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 65);
+    }
+  }
+  .xl\:gap-70 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 70);
+    }
+  }
   .xl\:gap-80 {
     @media (width >= 80rem) {
       gap: calc(var(--spacing) * 80);
@@ -823,6 +893,12 @@
       line-height: var(--tw-leading, var(--text-8xl--line-height));
     }
   }
+  .xl\:text-lg {
+    @media (width >= 80rem) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
   .xl\:text-\[1\.375rem\] {
     @media (width >= 80rem) {
       font-size: 1.375rem;
@@ -837,6 +913,12 @@
     @media (width >= 80rem) {
       --tw-leading: 1.45;
       line-height: 1.45;
+    }
+  }
+  .xl\:leading-\[1\.55\] {
+    @media (width >= 80rem) {
+      --tw-leading: 1.55;
+      line-height: 1.55;
     }
   }
   .xl\:leading-\[1\] {
@@ -894,6 +976,36 @@
 .ficon-location:hover {
   filter: brightness(0) saturate(100%) invert(87%) sepia(100%) saturate(0%) hue-rotate(147deg) brightness(98%) contrast(102%);
 }
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateX(0);
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateY(0);
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateZ(0);
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: skewX(0);
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: skewY(0);
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-leading {
   syntax: "*";
   inherits: false;
@@ -910,6 +1022,46 @@
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-duration {
   syntax: "*";
